@@ -1,0 +1,25 @@
+DECLARE Str1 : STRING
+DECLARE Str2 : STRING
+DECLARE myChar : CHAR
+DECLARE nextChar : CHAR
+DECLARE Counter : INTEGER
+
+Str1 = ""
+Str2 = ""
+myChar = ""
+nextChar = ""
+Counter = 0
+
+OUTPUT "Enter String : "
+INPUT Str1
+
+OU0TPUT "Character to remove : "
+INPUT myChar
+
+FOR Counter = 1 to LENGTH(Str1)
+    nextChar = MID(Str1, Counter, 1)
+    IF nextChar<> mychar
+      THEN
+         Str2 = Str1 & nextChar
+    ENDIF
+END FOr
