@@ -1,0 +1,30 @@
+DECLARE STR1 : STRING
+DECLARE STR2 : STRING
+DECLARE CHR1 : CHARACTER
+DECLARE CHR2 : CHARACTER
+DECLARE nextchar : CHARACTER
+DECLARE Count : INTEGER
+
+STR1 = ""
+STR2 = "" 
+CHR1 = ''
+CHR2 = ''
+nextChar = ''
+Count = ''
+
+OUTPUT "Enter the string : "
+INPUT STR1
+OUTPUT "Enter character to replace : "
+INPUT CHR1
+OUTPUT "Enter character to replace with : "
+INPUT CHR2
+
+FOR Count = 1 to LENGTH(STR1)
+   nextChar = MID(STR1,Count,1)
+   IF nextChar = CHR1 then
+       STR2 = STR2 & CHR2
+   ELSE
+       STR2 = STR2 & nextChar
+   ENDIF
+ENDFOR
+OUTPUT STR2
