@@ -1,0 +1,24 @@
+DECLARE Str1 : STRING
+DECLARE Char1 : STRING
+DECLARE Counter : INTEGER
+DECLARE VCounter : INTEGER
+
+CONSTANT Vowels : "aeiouAEIOU"
+
+Str1 = ""
+Char1 = ""
+Counter = 0
+VCounter = 0
+
+OUTPUT "Enter String : "
+INPUT Str1
+
+FOR Counter = 1 to LEN(Str1)
+         Char1 = MID(Str1, Counter, 1)
+         IF LOCATE(Vowels, Char1) > 0
+             Then
+                 VCounter = VCounter + 1
+         EndIF
+ENDFOr
+
+OUTPUT "Number of Vowels are : ", VCounter
