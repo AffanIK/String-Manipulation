@@ -1,0 +1,27 @@
+DECLARE Str1 : STRING
+DECLARE nextchar : CHAR
+DECLARE Count : INTEGER
+DECLARE Digit : INTEGER 
+DECLARE Alphabet : INTEGER
+
+Str1 = ""
+nextchar = ""
+Count = 0
+Digit = 0 
+Alpabet = 0
+
+OUTPUT "Enter String : "
+INPUT Str1
+
+FOR Count = 1 to LEN(Str1)
+         nextchar = MID(Str1, Count, 1)
+         IF ASC(nextchar) >= 65 
+             THEN
+                  Alphabet = Alphabet + 1
+              ELSE
+                  Digit = Digit + 1
+         ENDIF
+ENDFOR
+
+OUTPUT "Number of Digits are : ", Digit
+OUTPUT "Number of Alphabets are : ", Alphabet 
