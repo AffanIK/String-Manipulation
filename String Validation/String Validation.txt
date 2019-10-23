@@ -1,0 +1,52 @@
+DECLARE Str1 : STRING
+DECLARE nextChar : CHAR
+DECLARE Count : INTEGER
+DECLARE IsValid : Boolean
+
+Str1 = ""
+nextChar = ''
+Count = 0
+IsValid : True
+
+OUTPUT "Enter String"
+INPUT Str1
+IF LENGTH(Str1) <> 11 THEN
+      IsValid = FALSE
+ENDIF
+
+IF IsValid = True THEN
+     IF MID(Str1, 5, 1) <> '-' OR MID(Str1, 9, 1) <> '-' THEN
+           IsValid = FALSE
+     ENDIF
+ENDIF
+
+IF IsValid = TRUE THEN
+      FOR Count = 1 to 4
+             nextChar = MID(Str1, Count, 1)
+             IF nextChar < "A" Or nextChar > "Z" THEN 
+                    IsValid = FALSE
+             ENDIF
+ENDIF  
+ 
+IF IsValid = TRUE THEN
+      FOR Count = 6 to 8
+             nextChar = MID(Str1, Count, 1)
+             IF nextChar < "0" Or nextChar > "9" THEN
+                    IsValid = FALSE
+             ENDIF
+ENDIF  
+
+IF IsValid = TRUE THEN
+      FOR Count = 10 to 11
+             nextChar = MID(Str1, Count, 1)
+             IF nextChar < "a" Or nextChar > "z" THEN  
+                    IsValid = FALSE
+             ENDIF
+ENDIF  
+
+IF IsValid = TRUE THEN
+    OUTPUT "String Is Valid"
+  Else
+    Output "String Not Valid"
+ENDIF
+
