@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Basic Express 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Binary to Denary Converter", "Binary to Denary Converter\Binary to Denary Converter.vbproj", "{408F70B9-920D-4028-B760-B78AB60A35B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{408F70B9-920D-4028-B760-B78AB60A35B6}.Debug|x86.ActiveCfg = Debug|x86
+		{408F70B9-920D-4028-B760-B78AB60A35B6}.Debug|x86.Build.0 = Debug|x86
+		{408F70B9-920D-4028-B760-B78AB60A35B6}.Release|x86.ActiveCfg = Release|x86
+		{408F70B9-920D-4028-B760-B78AB60A35B6}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
